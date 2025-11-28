@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+/*body*/
+body {
+    margin: 60px;
+    background: linear-gradient(45deg, #6e9654, #fad0c4);
+    /* rgb(184, 224, 161); */
+}
+
+header img {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 100%;
+    /* display: block; */
+    height: 400px;
+}
+
 /*h1 y h2*/
 h1 {
     color: red;
@@ -16,7 +31,7 @@ h2 {
     margin: 30px;
 }
 
-/*imagenes*/
+/*imag: ahorro/presupuesto*/
 img {
     display: block;
     margin: auto;
@@ -24,13 +39,7 @@ img {
     height: 200px;
 }
 
-header img {
-    margin-bottom: 20px;
-    width: 100%;
-    max-width: 100%;
-    display: block;
-    height: auto;
-}
+
 
 .pages {
     margin: 50px;
@@ -53,19 +62,14 @@ table,
 th,
 td {
     border: 5px solid rgb(218, 23, 23);
+    th {
+        text-align: lefth;
+    }
 }
 
-th {
-    text-align: lefth;
-}
 
-/*videos*/
+
+/*videos
 video {
     margin-bottom: 20px;
-}
-
-/*bodyy*/
-body {
-    margin: 60px;
-    background-color: rgb(184, 224, 161);
-}
+}*/
