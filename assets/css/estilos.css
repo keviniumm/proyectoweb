@@ -1,3 +1,5 @@
+/* $color-terciario: ; */
+/* para usar se escribe @use'direccion variable'; */
 * {
   margin: 0;
   padding: 0;
@@ -61,7 +63,6 @@ th,
 td {
   border: 5px solid rgb(218, 23, 23);
 }
-
 table th,
 th th,
 td th {
@@ -72,7 +73,6 @@ td th {
 video {
     margin-bottom: 20px;
 }*/
-
 /*containers*/
 .container-grid {
   display: grid;
@@ -127,12 +127,10 @@ main .container-grid a:link {
 .accordion {
   background-color: #5f6b0e;
 }
-
 .accordion .accordion-button {
   background-color: #9fb320;
   color: rgb(204, 16, 16);
 }
-
 .accordion .accordion-item {
   background-color: #5f6b0e;
 }
@@ -144,17 +142,14 @@ main .container-grid a:link {
   border-radius: 15px;
   padding: 10px;
 }
-
 .card .card-title {
   color: #6d0000;
   font-weight: bold;
 }
-
 .card .card-text {
   color: #2212b1;
   font-weight: bolder;
 }
-
 .card .boton-card {
   background-color: orange;
 }
@@ -178,7 +173,6 @@ a:visited {
 footer {
   margin: 30px;
 }
-
 footer nav {
   margin-bottom: 10px;
 }

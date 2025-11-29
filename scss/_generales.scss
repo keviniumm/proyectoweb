@@ -1,3 +1,5 @@
+@use'../scss/variables.scss' as *;
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +9,8 @@
 /*body*/
 body {
     margin: 60px;
-    background: linear-gradient(45deg, #6e9654, #fad0c4);
+    background: linear-gradient(45deg, $color-primario, $color-secundario);
+
     /* rgb(184, 224, 161); */
 }
 
