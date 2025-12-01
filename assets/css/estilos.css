@@ -1,4 +1,3 @@
-/* $color-terciario: ; */
 /* para usar se escribe @use'direccion variable'; */
 * {
   margin: 0;
@@ -82,6 +81,10 @@ video {
   border: 5px solid black;
   margin: 50px;
 }
+.container-grid div img {
+  width: 100%;
+  height: 100%;
+}
 
 .el-cronista {
   grid-area: el-cronista;
@@ -107,11 +110,10 @@ video {
   position: relative;
 }
 
-.container-grid div img {
-  width: 100%;
-  height: 100%;
-}
-
+/* .container-grid div img {
+    width: 100%;
+    height: 100%;
+} */
 main .container-grid a:link {
   color: rgb(189, 194, 54);
   bottom: 10px;

@@ -24,12 +24,12 @@ header img {
 
 /*h1 y h2*/
 h1 {
-    color: red;
+    color: $color-H1;
     text-align: center;
 }
 
 h2 {
-    color: rgb(197, 88, 60);
+    color: $color-H2;
     text-align: center;
     margin: 30px;
 }
