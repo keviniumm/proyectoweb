@@ -5,8 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inversiones</title>
+
+    <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- animaciones css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!--CSS-->
     <link rel="stylesheet" href="../assets/css/estilos.css">
 </head>
 <!--inicio-pagina-->
@@ -14,7 +21,7 @@
 <body>
     <header>
         <h1>Inversiones</h1>
-        <img src="../assets/img/inveriones.jpg" alt="img inveriones">
+        <img src="../assets/img/inveriones.jpg" alt="img inveriones" class="animate__animated animate__zoomIn">
 
         <!--navegador-->
         <nav class="navbar navbar-expand-lg navbar-ligth" style="background-color: rgb(74, 181, 145);">
@@ -54,16 +61,16 @@
         <h2>Inversiones</h2>
         <h2>El Mundo de las Finanzas</h2>
 
-        <div class="pages">
+        <div>
             <p>Aunque parezcan un poco complejas, las <em>Inversiones</em> son una fuente muy valiosa para poder
                 engrosar
                 nuestros ahorros creando un nuenvo <strong>Flujo de Ingresos</strong> hacia nuetra cuenta personal.</p>
         </div>
 
-        <!--tabla-->
+        <!--tabla y tarjetas-->
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-5">
+                <div class="col-12 col-lg-3">
                     <table>
                         <tr>
                             <th>Bonos internacionales:</th>
@@ -77,8 +84,9 @@
                         </tr>
                     </table>
                 </div>
-                <!--tarjeta bootstrap-->
-                <div class="col-12 col-lg-6">
+
+                <!--tarjeta bootstrap 1-->
+                <div class="col-12 col-lg-3">
                     <div class="card" style="width: 18rem;">
                         <img src="../assets/img/bonos.jpg" class="card-img-top" alt="bonos">
                         <div class="card-body">
@@ -89,8 +97,24 @@
                         </div>
                     </div>
                 </div>
+
+                <!--tarjeta bootstrap 2-->
+                <div class="col-12 col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../assets/img/bonos argentinos.jpeg" class="card-img-top" alt="bonos argentinos">
+                        <div class="card-body">
+                            <h5 class="card-title">Cotizaciones Argentinas</h5>
+                            <p class="card-text">En este espacio podes encontrar algunas de las cotizaciones de bonos en
+                                los mercados Argentinos</p>
+                            <a href="https://open.bymadata.com.ar/#/dashboard"
+                                class="btn btn-primary boton-card">Mercados</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+
         <!--fin-cuerpo-->
     </main>
     <footer>

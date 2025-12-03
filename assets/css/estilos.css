@@ -40,10 +40,6 @@ img {
   height: 200px;
 }
 
-.pages {
-  margin: 50px;
-}
-
 p {
   font-family: "Roboto", sans-serif;
   margin-bottom: 40px;
@@ -68,16 +64,20 @@ td th {
   text-align: lefth;
 }
 
-/*videos
-video {
-    margin-bottom: 20px;
-}*/
+.label {
+  border: 1px solid #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #b64d10;
+}
+
 /*containers*/
 .container-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 200px 200px;
-  grid-template-areas: "el-cronista . ilprofesional" "the-economist . forbes";
+  grid-template-areas: "el-cronista vacio ilprofesional" "the-economist vacio forbes";
   border: 5px solid black;
   margin: 50px;
 }
@@ -88,32 +88,29 @@ video {
 
 .el-cronista {
   grid-area: el-cronista;
-  /* display: flex; */
   position: relative;
 }
 
 .ilprofesional {
   grid-area: ilprofesional;
-  /* display: flex; */
   position: relative;
 }
 
 .the-economist {
   grid-area: the-economist;
-  /* display: flex; */
   position: relative;
 }
 
 .forbes {
   grid-area: forbes;
-  /* display: flex; */
   position: relative;
 }
 
-/* .container-grid div img {
-    width: 100%;
-    height: 100%;
-} */
+.vacio {
+  background: linear-gradient(135deg, #d1e8c0, #b8d7a8);
+  animation: fondoMovimiento 6s infinite alternate ease-in-out;
+}
+
 main .container-grid a:link {
   color: rgb(189, 194, 54);
   bottom: 10px;
@@ -135,6 +132,9 @@ main .container-grid a:link {
 }
 .accordion .accordion-item {
   background-color: #5f6b0e;
+}
+.accordion .accordion-collapse {
+  transition: height 0.9s ease;
 }
 
 /* tarjetabootstrap */
@@ -166,9 +166,8 @@ main .container-grid a:link {
 a {
   color: rgb(27, 27, 23);
 }
-
 a:visited {
-  color: brown;
+  color: rgb(163, 165, 42);
 }
 
 /*footer*/

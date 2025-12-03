@@ -43,11 +43,6 @@ img {
 }
 
 
-
-.pages {
-    margin: 50px;
-}
-
 p {
     font-family: "Roboto", sans-serif;
     margin-bottom: 40px;
@@ -65,14 +60,17 @@ table,
 th,
 td {
     border: 5px solid rgb(218, 23, 23);
+
     th {
         text-align: lefth;
     }
 }
 
+.label {
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #b64d10;
+}
 
-
-/*videos
-video {
-    margin-bottom: 20px;
-}*/

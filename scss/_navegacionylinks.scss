@@ -7,8 +7,8 @@
 /*estilos links*/
 a {
     color: rgb(27, 27, 23);
-}
 
-a:visited {
-    color: brown;
+    &:visited {
+        color: rgb(163, 165, 42);
+    }
 }

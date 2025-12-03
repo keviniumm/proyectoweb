@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 200px 200px;
-    grid-template-areas: "el-cronista . ilprofesional" "the-economist . forbes";
+    grid-template-areas: "el-cronista vacio ilprofesional" "the-economist vacio forbes";
     border: 5px solid black;
     margin: 50px;
 
@@ -11,36 +11,34 @@
         width: 100%;
         height: 100%;
     }
+    
 }
 
 .el-cronista {
     grid-area: el-cronista;
-    /* display: flex; */
     position: relative;
 }
 
 .ilprofesional {
     grid-area: ilprofesional;
-    /* display: flex; */
     position: relative;
 }
 
 .the-economist {
     grid-area: the-economist;
-    /* display: flex; */
     position: relative;
 }
 
 .forbes {
     grid-area: forbes;
-    /* display: flex; */
     position: relative;
 }
 
-/* .container-grid div img {
-    width: 100%;
-    height: 100%;
-} */
+.vacio {
+    background: linear-gradient(135deg, #d1e8c0, #b8d7a8);
+    animation: fondoMovimiento 6s infinite alternate ease-in-out;
+}
+
 
 main .container-grid a:link {
     color: rgb(189, 194, 54);

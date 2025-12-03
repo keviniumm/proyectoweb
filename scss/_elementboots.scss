@@ -10,6 +10,11 @@
     .accordion-item {
         background-color: #5f6b0e;
     }
+
+    .accordion-collapse {
+    transition: height 0.9s ease;
+}
+
 }
 
 
