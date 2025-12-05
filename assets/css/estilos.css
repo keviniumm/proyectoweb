@@ -9,13 +9,14 @@
 body {
   margin: 60px;
   background: linear-gradient(45deg, #6e9654, #fad0c4);
-
+  /* rgb(184, 224, 161); */
 }
 
 header img {
   margin-bottom: 20px;
   width: 100%;
   max-width: 100%;
+  /* display: block; */
   height: 400px;
 }
 
@@ -57,7 +58,6 @@ th,
 td {
   border: 5px solid rgb(218, 23, 23);
 }
-
 table th,
 th th,
 td th {
@@ -81,10 +81,24 @@ td th {
   border: 5px solid black;
   margin: 50px;
 }
-
-.container-grid div img {
+.container-grid img {
   width: 100%;
   height: 100%;
+  transition: 1.3s ease;
+}
+.container-grid img:hover {
+  filter: brightness(40%);
+}
+.container-grid a {
+  bottom: 10px;
+  position: absolute;
+  left: 50%;
+}
+.container-grid a:hover {
+  color: violet;
+}
+.container-grid a:visited {
+  color: rgb(23, 46, 120);
 }
 
 .el-cronista {
@@ -112,13 +126,6 @@ td th {
   animation: fondoMovimiento 6s infinite alternate ease-in-out;
 }
 
-main .container-grid a:link {
-  color: rgb(189, 194, 54);
-  bottom: 10px;
-  position: absolute;
-  left: 50%;
-}
-
 .container .col p {
   width: 300px;
 }
@@ -127,16 +134,13 @@ main .container-grid a:link {
 .accordion {
   background-color: #5f6b0e;
 }
-
 .accordion .accordion-button {
   background-color: #9fb320;
   color: rgb(204, 16, 16);
 }
-
 .accordion .accordion-item {
   background-color: #5f6b0e;
 }
-
 .accordion .accordion-collapse {
   transition: height 0.9s ease;
 }
@@ -148,18 +152,19 @@ main .container-grid a:link {
   border-radius: 15px;
   padding: 10px;
 }
-
 .card .card-title {
   color: #6d0000;
   font-weight: bold;
 }
-
 .card .card-text {
   color: #2212b1;
   font-weight: bolder;
 }
-
 .card .boton-card {
+  background-color: orange;
+}
+
+.btn-primary {
   background-color: orange;
 }
 
@@ -171,18 +176,28 @@ main .container-grid a:link {
 
 /*estilos links*/
 a {
-  color: rgb(27, 27, 23);
+  color: rgb(212, 20, 20);
 }
-
+a:hover {
+  color: violet;
+}
 a:visited {
-  color: rgb(163, 165, 42);
+  color: rgb(23, 46, 120);
 }
 
 /*footer*/
 footer {
   margin: 30px;
 }
-
 footer nav {
   margin-bottom: 10px;
 }
+footer ul {
+  margin-top: 20px;
+}
+footer ul li {
+  font-weight: bold;
+  color: rgb(66, 23, 3);
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -12,8 +12,8 @@
     }
 
     .accordion-collapse {
-    transition: height 0.9s ease;
-}
+        transition: height 0.9s ease;
+    }
 
 }
 
@@ -24,16 +24,22 @@
     border: 2px solid #0c0f04;
     border-radius: 15px;
     padding: 10px;
+
     .card-title {
         color: #6d0000;
         font-weight: bold;
     }
+
     .card-text {
         color: #2212b1;
         font-weight: bolder;
     }
+
     .boton-card {
         background-color: orange;
     }
 }
 
+.btn-primary {
+    background-color: orange;
+}

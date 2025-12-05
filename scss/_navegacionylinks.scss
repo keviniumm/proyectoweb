@@ -6,9 +6,13 @@
 
 /*estilos links*/
 a {
-    color: rgb(27, 27, 23);
+    color: rgb(212, 20, 20);
+
+    &:hover {
+        color: violet;
+    }
 
     &:visited {
-        color: rgb(163, 165, 42);
+        color: rgb(23, 46, 120);
     }
 }
