@@ -34,10 +34,8 @@ h2 {
 
 /*imag: ahorro/presupuesto*/
 img {
-  display: block;
-  margin: auto;
-  width: 600px;
-  height: 200px;
+  max-width: 600px;
+  max-height: 350px;
 }
 
 p {
@@ -45,6 +43,7 @@ p {
   margin-bottom: 40px;
   font-size: 20px;
   border: 6px solid green;
+  padding: 10px;
 }
 
 /*tabla*/
@@ -75,11 +74,11 @@ td th {
 /*containers*/
 .container-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 200px 200px;
-  grid-template-areas: "el-cronista vacio ilprofesional" "the-economist vacio forbes";
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 200px);
+  grid-template-areas: "el-cronista" "ilprofesional" "the-economist" "forbes";
   border: 5px solid black;
-  margin: 50px;
+  margin: 20px;
 }
 .container-grid img {
   width: 100%;
@@ -101,6 +100,34 @@ td th {
   color: rgb(23, 46, 120);
 }
 
+@media (min-width: 1024px) {
+  .container-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-template-areas: "el-cronista vacio ilprofesional" "the-economist vacio forbes";
+    border: 5px solid black;
+    margin: 50px;
+  }
+  .container-grid img {
+    width: 100%;
+    height: 100%;
+    transition: 1.3s ease;
+  }
+  .container-grid img:hover {
+    filter: brightness(40%);
+  }
+  .container-grid a {
+    bottom: 10px;
+    position: absolute;
+    left: 50%;
+  }
+  .container-grid a:hover {
+    color: violet;
+  }
+  .container-grid a:visited {
+    color: rgb(23, 46, 120);
+  }
+}
 .el-cronista {
   grid-area: el-cronista;
   position: relative;
@@ -122,14 +149,25 @@ td th {
 }
 
 .vacio {
-  background: linear-gradient(135deg, #d1e8c0, #b8d7a8);
-  animation: fondoMovimiento 6s infinite alternate ease-in-out;
+  /* background: linear-gradient(135deg, #d1e8c0, #b8d7a8); */
+  /* animation: fondoMovimiento 6s infinite alternate ease-in-out; */
 }
 
-.container .col p {
-  width: 300px;
+.container-video {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
 }
 
+@media (min-width: 1024px) {
+  .container-video {
+    flex-direction: row;
+  }
+}
+/* .container .col p {
+    width: 300px;
+} */
 /*acordeon*/
 .accordion {
   background-color: #5f6b0e;
@@ -166,6 +204,7 @@ td th {
 
 .btn-primary {
   background-color: orange;
+  margin: 10px;
 }
 
 /* BARRA DE NAVEGACION*/
@@ -198,6 +237,14 @@ footer ul {
 footer ul li {
   font-weight: bold;
   color: rgb(66, 23, 3);
+}
+
+.video-consejo {
+  width: 40%;
+  transition: transform 0.6s ease;
+}
+.video-consejo:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=estilos.css.map */

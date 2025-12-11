@@ -36,10 +36,8 @@ h2 {
 
 /*imag: ahorro/presupuesto*/
 img {
-    display: block;
-    margin: auto;
-    width: 600px;
-    height: 200px;
+    max-width: 600px;
+    max-height: 350px;
 }
 
 
@@ -48,6 +46,7 @@ p {
     margin-bottom: 40px;
     font-size: 20px;
     border: 6px solid green;
+    padding: 10px;
 }
 
 /*tabla*/
@@ -73,5 +72,3 @@ td {
     font-weight: bold;
     color: #b64d10;
 }
-
-
